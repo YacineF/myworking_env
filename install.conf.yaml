@@ -5,5 +5,24 @@
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
     ~/.zshrc: zshrc
+    ~/.fzf-zsh: fzf-zsh
+    ~/.fzf_env: fzf_env
+    fzf-plugins: ~/.fzf-plugins/fzf-tab
+      #    ~/.fzf-tab.plugin.zsh: fzf-tab.plugin.zsh
+    
+
+    #- create:
+  #  - ~/.fzf-plugins/fzf-tab
+
+- shell:
+  - chsh -s $(which zsh)
+- clean: ['~']
+
+- link:
+    ~/.gitconfig:
+        path: gitconfig
+        create: false
+        relink: false
+        force: false
 
 
