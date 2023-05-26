@@ -7,7 +7,7 @@
     ~/.zshrc: zshrc
     ~/.fzf-zsh: fzf-zsh
     ~/.fzf_env: fzf_env
-    fzf-plugins: ~/.fzf-plugins/fzf-tab
+    ~/.fzf-plugins/fzf-tab: fzf-plugins
       #    ~/.fzf-tab.plugin.zsh: fzf-tab.plugin.zsh
     
 
@@ -24,5 +24,10 @@
         create: false
         relink: false
         force: false
+
+
+- clean: ['~']
+
+- link:
 
 
