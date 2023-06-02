@@ -5,29 +5,20 @@
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
     ~/.zshrc: zshrc
+    ~/.docker-aliases: docker-aliases
     ~/.fzf-zsh: fzf-zsh
     ~/.fzf_env: fzf_env
-    ~/.fzf-plugins/fzf-tab: fzf-plugins
-      #    ~/.fzf-tab.plugin.zsh: fzf-tab.plugin.zsh
-    
-
-    #- create:
-  #  - ~/.fzf-plugins/fzf-tab
-
-- shell:
-  - chsh -s $(which zsh)
-- clean: ['~']
-
-- link:
     ~/.gitconfig:
         path: gitconfig
         create: false
         relink: false
         force: false
 
+- create:
+    - ~/.fzf-plugins/
 
-- clean: ['~']
-
-- link:
+- shell:
+  - chsh -s $(which zsh)
+  - git clone https://github.com/Aloxaf/fzf-tab ~/.fzf-plugins/fzf-tab
 
 

@@ -44,4 +44,4 @@ source ~/.fzf-zsh
 #alias bat='batcat'
 eval "$(starship init zsh)"
 # Docker aliases
-source /etc/profile.d/docker-aliases.sh
+source ~/.docker-aliases.sh
